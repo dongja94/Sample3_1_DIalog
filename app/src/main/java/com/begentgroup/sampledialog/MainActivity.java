@@ -20,5 +20,14 @@ public class MainActivity extends AppCompatActivity {
                 f.show(getSupportFragmentManager(), "dialog");
             }
         });
+
+        btn = (Button)findViewById(R.id.btn_show_custom);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CustomDialogFragment f = new CustomDialogFragment();
+                f.show(getSupportFragmentManager(), "custom");
+            }
+        });
     }
 }
